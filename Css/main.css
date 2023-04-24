@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.chico{
+    display: none;
+}
+.logo{
+    width: 4rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.cabezera{
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    height: 5rem;
+    
+}
+header section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hijo1{
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.cabezera, .barra, ul{
+    list-style: none;
+    display: flex;
+    column-gap: 1.5rem;
+    padding: 0%;
+    margin: 0%;
+}
+.cabezera, .barra, ul, li{
+    padding-right: 0.2rem;
+}
+.carrucel{
+    display: flex;
+    height: 500px;
+}
+.hijo-carrucel{
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:700px) {
+    .hijo2{
+        display: none;
+    }
+    .chico{
+        display: flex;
+        padding-right: 0.1rem;
+    }
+    .img-barra{
+        width: 2rem;
+    }
+}
+@media screen and (min-width:900px) {
+    .carousel{
+        height: 500px;
+    }
+    .carousel-item{
+        height: 500px;
+        
+    }
+    .d-block{
+        height: 500px;
+        object-fit:fill;
+    }
+
+    
+}
