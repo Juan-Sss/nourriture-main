@@ -1,3 +1,4 @@
+/* Cabezera */
 *{
     box-sizing: border-box;
     margin: 0%;
@@ -18,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: brown;
+    background-color: rgb(255, 177, 177);;
     height: 5rem;
     
 }
@@ -41,13 +42,28 @@ header section{
 .cabezera, .barra, ul, li{
     padding-right: 0.2rem;
 }
-.carrucel{
+
+.slider{
     display: flex;
-    height: 500px;
+    justify-content: center;
 }
-.hijo-carrucel{
-    width: 100%;
-    object-fit: contain;
+.slider-hijo{
+    display: flex;
+    width: 110rem;
+    height: 550px;
+}
+.slider-hijo img{
+    width: 0px;
+    flex-grow:1;
+    object-fit: cover;
+    opacity: .7;
+    transition: 0.9s ease;
+}
+.slider-hijo img:hover{
+    width: 27rem;
+    filter: contrast(105%);
+    opacity: 1;
+    object-fit: fill;
 }
 
 @media screen and (max-width:700px) {
