@@ -3,7 +3,58 @@
     margin: 0%;
     padding: 0%;
 }
+
+.form-register{
+width: 400px;
+padding:30px;
+margin:auto;
+margin-top: 180px;
+border-radius: 4px;
+
+
+}
+.form-register h4 {
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background-color: brown;  
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    /* border: 1px solid ;  */
+}
+
+.form-register botons {
+width: 100%;
+border:none;
+ padding: 12px;
+ margin: 10px 0;
+ line-height: 40px;
+
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+}
+
+.form-register a {
+color:brown;
+text-decoration: none;
+
+}
+.form-register a:hover {
+    color:brown;
+    text-decoration: underline;
+    
+    }
+
+
 .chico{
+
+
     display: none;
 }
 .logo{
