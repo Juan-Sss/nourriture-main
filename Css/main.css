@@ -3,7 +3,7 @@
     margin: 0%;
     padding: 0%;
     
-}
+} 
 body{
     background-color: rgb(248, 179, 179);
 }
@@ -26,6 +26,10 @@ body{
     height: 5rem;
     
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 header section{
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +42,7 @@ header section{
 .cabezera, .barra, ul{
     list-style: none;
     display: flex;
-    column-gap: 1.5rem;
+    column-gap: 1.2rem;
     padding: 0%;
     margin: 0%;
 }
@@ -51,7 +55,7 @@ header section{
     background-color: white ;
     text-align: center;
     border: solid rgb(3, 3, 3) 2px;
-    margin: 1rem 2rem 1.5rem 2rem;
+    margin: 1rem 3rem 1.5rem 3rem;
 }
 h2{
     padding-top: 1rem;
@@ -93,6 +97,9 @@ a{
     }
     .img-barra{
         width: 2rem;
+    }
+    .articulo1{
+        margin: 1.5rem 1.5rem 1.5rem 1.5rem;
     }
 
 }
