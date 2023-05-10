@@ -75,12 +75,10 @@ h5{
     border: 0.1rem solid black;
     height: 1.6rem;
 }
-
 .controls-buttom{
     width: 7rem;
     align-self: center;
 }
-
 @media screen and (max-width:700px) {
     .hijo2{
         display: none;
