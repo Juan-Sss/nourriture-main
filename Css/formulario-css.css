@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background:url(../Img/fondo-form.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+
+}
+.chico{
+    display: none;
+}
+.logo{
+    width: 4rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.cabezera{
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 177, 177);
+    height: 5rem;
+    
+}
+header section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hijo1{
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.cabezera, .barra, ul{
+    list-style: none;
+    display: flex;
+    column-gap: 1.5rem;
+    padding: 0%;
+    margin: 0%;
+}
+.cabezera, .barra, ul, li{
+    padding-right: 0.2rem;
+}
+.form-container{
+    display: flex;
+    background-color: rgb(247, 200, 200);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 0 0 0 ;
+    border: 1px solid rgb(248, 186, 186);
+    padding: 2rem 0 2rem 0rem;
+}
+.form-register{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    
+}
+.titulo-form{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+.controls{
+    border: 0.1rem solid black;
+    height: 1.6rem;
+}
+
+.controls-buttom{
+    width: 7rem;
+    align-self: center;
+}
+
+@media screen and (max-width:700px) {
+    .hijo2{
+        display: none;
+    }
+    .chico{
+        display: flex;
+        padding-right: 0.1rem;
+    }
+    .img-barra{
+        width: 2rem;
+    }
+    .form-container{
+        margin: 1rem 0 0 0 ;
+    }
+
+}
