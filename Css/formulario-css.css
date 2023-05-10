@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
     background:url(../Img/fondo-form.jpg);
@@ -78,6 +79,26 @@ h5{
 .controls-buttom{
     width: 7rem;
     align-self: center;
+}
+.pie{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color:#ff8d8d ;
+    height: 3rem;
+}
+a{
+    margin: 0 0.6rem 0 0.6rem;
+}
+.icono{
+    width: 2rem;
+    
+}
+.yt{
+    margin-bottom: 0.1rem;
 }
 @media screen and (max-width:700px) {
     .hijo2{
