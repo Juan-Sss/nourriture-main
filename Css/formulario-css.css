@@ -9,6 +9,9 @@ body{
     height: 100vh;
     background-size:cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 .chico{
@@ -49,23 +52,26 @@ header section{
 .cabezera, .barra, ul, li{
     padding-right: 0.2rem;
 }
+
 .form-container{
     display: flex;
-    background-color: rgb(247, 200, 200);
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 3rem 0 0 0 ;
-    border: 1px solid rgb(248, 186, 186);
+    /* margin: 3rem 0 0 0 ;  */
     padding: 2rem 0 2rem 0rem;
 }
 .form-register{
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-
-    
+    border: 0.1rem solid rgb(5, 5, 5);
+    border-radius: 0.3rem;
+    background-color: rgb(255, 177, 177);
+    padding: 1.4rem;
 }
+
 .titulo-form{
     text-align: center;
 }
@@ -82,9 +88,7 @@ h5{
 }
 .pie{
     display: flex;
-    position: absolute;
     width: 100%;
-    bottom: 0;
     justify-content: center;
     align-items: center;
     background-color:#ff8d8d ;
@@ -100,6 +104,7 @@ a{
 .yt{
     margin-bottom: 0.1rem;
 }
+
 @media screen and (max-width:700px) {
     .hijo2{
         display: none;
@@ -112,7 +117,14 @@ a{
         width: 2rem;
     }
     .form-container{
-        margin: 1rem 0 0 0 ;
+        /* margin: 4rem 0 0 0 ; */
     }
 
 }
+@media screen and (min-height:1000px) {
+    .form-container{
+        /* margin: 12rem 0 0 0 ; */
+    }
+
+}
+
