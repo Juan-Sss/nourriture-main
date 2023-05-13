@@ -42,6 +42,9 @@ header section{
 .cabezera, .barra, ul, li{
     padding-right: 0.2rem;
 }
+.contenedor-carrusel{
+    display: none;
+}
 
 .slider{
     display: flex;
@@ -50,7 +53,7 @@ header section{
 .slider-hijo{
     display: flex;
     width: 110rem;
-    height: 550px;
+    height: 32rem;
 }
 .slider-hijo img{
     width: 0px;
@@ -76,6 +79,12 @@ header section{
     }
     .img-barra{
         width: 2rem;
+    }
+    .slider-hijo{
+        display: none;
+    }
+    .contenedor-carrusel{
+        display: flex;
     }
 }
 @media screen and (min-width:900px) {
