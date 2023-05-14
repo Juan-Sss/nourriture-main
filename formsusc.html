@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <form action="#" method="get"></form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" minlength="2"  maxlength="80">
+            <label for="lastname">Apellido</label>
+            <input type="text" id="lastname" name="lastname" minlength="2" maxlength="80">
+
+            <label for="dni">DNI</label>
+            <input type="number" id="dni" name="dni" min="5" max="8">
+
+            <label for="email">Mail</label>
+            <input type="email" id="email" name="email" >
+            <br>
+            <label for="genre">Genero</label>
+            <input type="radio" id="genre" value="genre" value="f">Femenino 
+            <input type="radio" id="genre" value="genre" value="m">Masculino 
+            <input type="radio" id="genre" value="genre" value="o" checked>Otro
+            <br>
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" name="date" id="date">
+
+           
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias de recetas</legend>
+            <input type="checkbox" name="preferencias" id="preferencias" value="vegano">Veganas
+            <input type="checkbox" name="preferencias" id="preferencias" value="celiaco">Apto para celíacos
+            <input type="checkbox" name="preferencias" id="preferencias" value="carne">Carnes a las brasas
+            <input type="checkbox" name="preferencias" id="preferencias" value="postres">Postres
+            <input type="checkbox" name="preferencias" id="preferencias" value="pasteleria">Pastelería
+            <input type="checkbox" name="preferencias" id="preferencias" value="arroces">Arroces y pastas
+            <input type="checkbox" name="preferencias" id="preferencias" value="saludable">Saludables
+
+            <br>
+            <label for="foto">Subi tu foto de perfil</label>
+            <input type="file" name="foto" accept=".jpeg, .jpg, .png" id="foto">
+            <br>
+            <label for="description">Contanos tus preferencias</label>
+
+            <textarea name="description" id="description" cols="30" row="30"> </textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de tu Perfil</legend>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario"  maxlength="10">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password"  maxlength="10" minlength="6" placeholder="Entre 6 y 10 caracteres">
+
+        </fieldset>
+
+        <button type="submit" onclick="validarformulario()">Enviar</button>
+        <button type="reset">Cancelar</button>
+
+        <p id="mensaje"></p>
+
+        
+         
+    </main>
+
+    <script>
+        
+
+        function validarformulario(){
+            
+            const msg=document.getElementById("mensaje");
+            const nombre = document.getElementById("name").value;
+            const ndoc=document.getElementsByName("dni")[0].value;
+            const apel = document.getElementById("lastname").value;
+
+            if (ndoc < 10 || ndoc == null) {
+                
+                msg.innerHTML="Verifique el DNI ingresado";
+
+            } else if(nombre.length < 2) {
+                
+                msg.innerHTML="Verifique el nombre ingresado";
+            } else  {
+                msg.innerHTML="Bienvenid@ " + nombre + " " + apel;
+
+            }
+              
+            
+
+        }
+
+
+    </script>
+</body>
+</html>
