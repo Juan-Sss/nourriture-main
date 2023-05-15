@@ -4,14 +4,13 @@
     padding: 0%;
 }
 body{
-    background:url(../Img/fondo-form.jpg);
+    /* background:url(../Img/fondo-form.jpg);
     height: 100vh;
     background-size:cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: space-between; */
 }
 .chico{
     display: none;
@@ -55,60 +54,43 @@ header section{
     margin: 0%;
 }
 .cabezera, .barra, ul, li{
-    
+    padding-right: 0.3rem;    
 }
-
-.form-container{
+h2{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* margin: 3rem 0 0 0 ;  */
-    padding: 2rem 0 2rem 0rem;
-}
-.form-register{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    border: 0.1rem solid rgb(5, 5, 5);
-    border-radius: 0.3rem;
-    background-color: rgb(255, 177, 177);
-    padding: 5rem;
-}
-
-.titulo-form{
-    text-align: center;
-}
-h5{
-    text-align: center;
-}
-.controls{
-    border: 0.1rem solid black;
-    height: 1.6rem;
-}
-.controls-buttom{
-    width: 7rem;
-    align-self: center;
-}
-.pie{
-    display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    background-color:#ff8d8d ;
-    height: 3rem;
+    padding: 1rem 0 0 0;
 }
-a{
-    margin: 0 0.6rem 0 0.6rem;
+h3{
+    text-align: center;
 }
-.icono{
-    width: 2rem;
-    
+h4{
+    text-align: center;
 }
-.yt{
-    margin-bottom: 0.1rem;
+.articulo{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    align-items: center;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 0%;
 }
+.articulo2{
+    width: 60%;
+    margin: 0 0 0 0.5rem;
+}
+.acompanante{
+    width: 30%;
+}
+.listas{
+    display: block;
+    list-style:inside;
+}
+
+
+
+
 
 @media screen and (max-width:700px) {
     .hijo2{
@@ -121,10 +103,15 @@ a{
     .img-barra{
         width: 2rem;
     }
-    .form-register{
-        padding: 1.4rem;
+    .articulo{
+        flex-direction: column;
+        margin: 0%;
     }
-
+    .articulo2{
+        width: 100%;
+    }
+    .acompanante{
+        width: 50%;
+    }
 }
-
 
