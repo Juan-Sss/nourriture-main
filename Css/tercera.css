@@ -27,7 +27,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 177, 177);
+    background-color: rgb(160, 169, 247);
     height: 5rem;
     
 }
@@ -56,11 +56,15 @@ header section{
 .cabezera, .barra, ul, li{
     padding-right: 0.3rem;    
 }
-h2{
+.title{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 0 0;
+    margin: 1rem 0 0 0;
+}
+h2{
+    background-color: rgb(160, 169, 247);
+    padding: 0 2rem 0 2rem;
 }
 h3{
     text-align: center;
@@ -71,9 +75,11 @@ h4{
 .articulo{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid red;
+    border: 0.1rem solid black;
+    border-radius: 1%;
+    box-shadow: 10rem 0.5rem 0.1rem  rgb(160, 169, 247);
     align-items: center;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0.5rem 1rem;
     padding: 0%;
 }
 .articulo2{
@@ -81,7 +87,7 @@ h4{
     margin: 0 0 0 0.5rem;
 }
 .acompanante{
-    width: 30%;
+    width: 32%;
 }
 .listas{
     display: block;
@@ -105,10 +111,10 @@ h4{
     }
     .articulo{
         flex-direction: column;
-        margin: 0%;
+        margin: 1rem 0 0 0;
     }
     .articulo2{
-        width: 100%;
+        width: 95%;
     }
     .acompanante{
         width: 50%;
