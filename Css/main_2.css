@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    font-family: sans-serif;
 }
 body{
     display: flex;
@@ -10,6 +11,9 @@ body{
     /* flex-direction: column;
     justify-content: space-between;
     height: 100vh; */
+    animation-name: cuerpo;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
 }
 .chico{
     display: none;
@@ -55,6 +59,7 @@ header section{
 .slider{
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 .slider-hijo{
     display: flex;
@@ -95,11 +100,6 @@ p{
 .img-a1{
     max-width: 40%;
 }
-
-
-
-
-
 .pie{
     display: flex;
     width: 100%;
@@ -119,6 +119,11 @@ a{
     margin-bottom: 0.1rem;
 }
 
+@media screen and (max-width:500px) {
+    .articulo1{
+        margin: 0.5rem 0.4rem 1.5rem 0.4rem;
+    }
+}
 @media screen and (max-width:700px) {
     .hijo2{
         display: none;
@@ -151,4 +156,22 @@ a{
     }
 
     
+}
+/*ANIMACION DEL FONDO (UN COLOREO)*/
+@keyframes cuerpo {
+    0%{
+        background: #ffffff;
+    }
+    20%{
+        background: #f7cece
+    }
+    40%{
+        background: #f8c0c0;
+    }
+    80%{
+        background: #faa1a1;
+    }
+    100%{
+        background: #ffffff;
+    }
 }
